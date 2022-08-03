@@ -1,23 +1,10 @@
-import logo from './logo.svg';
+import ButtonMUI from './components/ButtonMUI/ButtonMUI';
 import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-success bg-opacity-50 border border-success rounded-2 d-flex w-50 p-3 m-auto position-absolute top-50 start-50 translate-middle">
+      <ButtonMUI />
     </div>
   );
 }
