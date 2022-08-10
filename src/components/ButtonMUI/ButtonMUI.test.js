@@ -1,33 +1,40 @@
 import { render, screen } from "@testing-library/react";
-import { fireEvent } from "@testing-library/dom";
-import "@testing-library/jest-dom/extend-expect";
+import userEvent from "@testing-library/user-event";
+import '@testing-library/jest-dom/extend-expect'
+import store from "../../redux/store";
+import { Provider } from "react-redux";
 import ButtonMUI from "./ButtonMUI";
 
-describe("<ButtonMUI />", () => {
-  let component;
-  beforeEach(() => {
-    component = render(<ButtonMUI />);
+const renderComp = () => render(
+  <Provider store={store}>
+    <ButtonMUI />
+  </Provider>
+);
+
+describe("When <ButtonMUI /> is rendered", () => {
+  // f for focus
+  it("should render the component", () => {
+    renderComp();
+    const button = screen.getByText(/Presioname!/i);
+    expect(button).toBeInTheDocument();
   });
 
-  test("render the component", () => {
-    component.getByText(/Presioname!/i);
-  });
-
-  test("component change their bg-color", () => {
-    const button = component.getByText(/Presioname!/i);
+  it("should change their bg-color when the user click the button", () => {
+    renderComp();
+    const button = screen.getByText(/Presioname!/i);
 
     expect(button).toHaveClass("bg-primary");
-    fireEvent.click(button);
+    userEvent.click(button);
     expect(button).toHaveClass("bg-danger");
   });
 
-  test("component change their text by mouse over or not", () => {
-    const button = component.getByText(/Presioname!/i);
-  
-    expect(button).toHaveTextContent("Presioname!");
-    fireEvent.mouseOver(button);
+  it("should change their text if the user mouse over or mouse leave", () => {
+    renderComp();
+    const button = screen.getByText(/Presioname!/i);
+
+    userEvent.hover(button);
     expect(button).toHaveTextContent("Hazlo Rapido!!!");
-    fireEvent.mouseOut(button);
+    userEvent.unhover(button);
     expect(button).toHaveTextContent("Presioname!");
   });
 });
