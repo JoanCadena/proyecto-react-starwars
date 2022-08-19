@@ -1,16 +1,8 @@
 import "@testing-library/jest-dom/extend-expect";
 import peopleDataReducer, { initialState } from "./peopleDataReducer";
 import { PEOPLE_REQUEST, PEOPLE_SUCCESS, PEOPLE_FAILURE } from "../actionTypes";
-// import { fetchPeopleRequest } from "../actions/peopleData";
 
 describe("When peopleData is used", () => {
-  // const dispatch = jest.fn(peopleDataReducer);
-
-  // it("should return the initialState", () => {
-  //   dispatch(fetchPeopleRequest);
-  //   expect(dispatch).toHaveBeenCalledWith(fetchPeopleRequest);
-  //   expect(dispatch).toReturnWith('something')
-  // });
 
   it("should return the initialState", () => {
     expect(peopleDataReducer(undefined, {})).toEqual(initialState);

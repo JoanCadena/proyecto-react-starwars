@@ -1,16 +1,34 @@
-import ButtonMUI from "./components/ButtonMUI/ButtonMUI";
-import store from "./redux/store";
-import { Provider } from "react-redux";
 import "./styles/App.css";
+import { useSelector, useDispatch } from "react-redux/";
+import { useEffect } from "react";
+import MUIButton from "./components/MUIButton/MUIButton";
+import MUIAlert from "./components/MUIAlert/MUIAlert";
+import fetchPeople from "./redux/actions/peopleData";
+import fetchVehicles from "./redux/actions/vehiclesData";
+import fetchStarships from "./redux/actions/starshipsData";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
+  const peopleData = useSelector((state) => state.peopleDataReducer);
+  const vehiclesData = useSelector((state) => state.vehiclesDataReducer);
+  const starshipsData = useSelector((state) => state.starshipsDataReducer);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchPeople());
+    dispatch(fetchVehicles());
+    dispatch(fetchStarships());
+  }, []);
+
   return (
-    <Provider store={store}>
-      <div className="App bg-success bg-opacity-50 border border-success rounded-2 d-flex w-50
-      p-3 m-auto position-absolute top-50 start-50 translate-middle">
-        <ButtonMUI />
-      </div>
-    </Provider>
+    <>
+      <NavBar />
+      {peopleData.error || vehiclesData.error || starshipsData.error ? (
+        <MUIAlert severity="error" mensaje="Something went wrong :(" />
+      ) : (
+        ""
+      )}
+    </>
   );
 }
 
