@@ -33,7 +33,7 @@ describe("When peopleData is used", () => {
     });
   });
 
-  it("should return the values from the API", () => {
+  it.skip("should return the values from the API", () => {
     const store = mockStore({ people: { loading: false } });
 
     const get = jest.fn().mockReturnValue({ data: 1 });

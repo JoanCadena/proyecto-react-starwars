@@ -28,7 +28,6 @@ const fetchVehicles = () => {
     axios
       .get("https://swapi.dev/api/vehicles/")
       .then((res) => {
-        console.log(res.data);
         dispatch(fetchVehiclesSuccess(res.data));
       })
       .catch((err) => {

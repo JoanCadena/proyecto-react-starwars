@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import '@testing-library/jest-dom/extend-expect'
 import MUIButton from "./MUIButton";
 
-const btnClick = jest.fn(() => 3)
+const btnClick = jest.fn()
 const renderComp = () => render(
     <MUIButton btnContent='btnTest' btnColor='primary' onClick={btnClick}/>
 );

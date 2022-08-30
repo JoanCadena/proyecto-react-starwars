@@ -4,7 +4,7 @@ import {
   STARSHIPS_FAILURE,
 } from "../actionTypes";
 
-const initialState = {
+export const initialState = {
   loading: false,
   starships: [],
   error: null,

@@ -4,8 +4,6 @@
   background-color: black;
   position: sticky;
   border: 1px solid #343434;
-  border-left: 0px;
-  border-right: 0px;
 }
 
 .header ul {
@@ -24,11 +22,13 @@
 	font-size: 15px;
 	font-weight: bold;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-right: 1px solid #333333;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
 }
 
 .header a {
@@ -43,5 +43,42 @@
 .header a.active {
 	color: #fefffe;
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid #fefffe;;
+}
+
+.underbar {
+  display: inline-block;
+  width: 60%;
+  box-shadow: 0 0 6px 2px;
+  border-top: 1px solid #fff;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.underbar--green {
+  color: lightgreen;
+}
+
+.underbar--red {
+  color: red;
+}
+
+.underbar--blue {
+  color: deepskyblue;
+}
+
+.underbar--violet {
+  color: violet;
+}
+
+.underbar--silver {
+  color: silver;
+}
+
+.underbar--gold {
+  color: gold;
+}
+
+.header a.active + .underbar {
+	opacity: 1;
+  transition: opacity 0.2s linear;
 }

@@ -28,7 +28,6 @@ const fetchStarships = () => {
     axios
       .get("https://swapi.dev/api/starships/")
       .then((res) => {
-        console.log(res.data);
         dispatch(fetchStarshipsSuccess(res.data));
       })
       .catch((err) => {

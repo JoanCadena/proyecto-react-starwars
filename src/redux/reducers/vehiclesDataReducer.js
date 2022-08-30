@@ -4,7 +4,7 @@ import {
   VEHICLES_FAILURE,
 } from "../actionTypes";
 
-const initialState = {
+export const initialState = {
   loading: false,
   vehicles: [],
   error: null,

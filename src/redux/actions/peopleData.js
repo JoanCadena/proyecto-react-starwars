@@ -28,7 +28,6 @@ const fetchPeople = () => {
     axios
       .get("https://swapi.dev/api/people/")
       .then((res) => {
-        console.log(res.data);
         dispatch(fetchPeopleSuccess(res.data));
       })
       .catch((err) => {
