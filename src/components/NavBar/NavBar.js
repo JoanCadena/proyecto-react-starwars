@@ -5,12 +5,16 @@ import imagen from "../../assets/sw_logo_stacked.png";
 const NavBar = () => {
   const routes = [
     { route: "/home", label: "home", customClass: "underbar--green" },
-    { route: "/characters",label: "characters", customClass: "underbar--red"},
+    { route: "/characters", label: "characters", customClass: "underbar--red" },
     { route: "/vehicles", label: "vehicles", customClass: "underbar--blue" },
-    { route: "/starships", label: "starships", customClass: "underbar--violet"}
+    {
+      route: "/starships",
+      label: "starships",
+      customClass: "underbar--violet",
+    },
   ];
   return (
-    <header className="header">
+    <header className="header sticky-top">
       <nav className="h-100">
         <ul>
           <div className="d-flex flex-row h-100 me-auto">

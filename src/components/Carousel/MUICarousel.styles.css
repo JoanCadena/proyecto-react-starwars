@@ -1,0 +1,15 @@
+.paper {
+  cursor: pointer;
+  background-color: #aaa9a9;
+  border-radius: 0 0 0px 0px;
+}
+
+.name {
+  color: #aaa9a9;
+  transition: color 0.1s linear;
+}
+
+.paper:hover .name {
+  color: #fefefe;
+  transition: color 0.1s linear;
+}
