@@ -1,7 +1,7 @@
 import "./Home.styles.css";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import Title from "../../components/Title/Title";
-import MUICarousel from "../../components/Carousel/MUICarousel";
+import MUICarousel from "../../components/MUICarousel/MUICarousel";
 import {
   infoCharacters,
   infoVehicles,
