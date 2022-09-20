@@ -28,7 +28,6 @@ describe("When <MUICarousel /> is rendered", () => {
       "background-image: url(https://lumiere-a.akamaihd.net/v1/images/62fcf548bde4cd00014e8114-image_0f021e09.jpeg?region=0%2C0%2C1536%2C864)"
     );
     const link = screen.getByRole("link");
-    screen.debug(link);
     expect(link).toHaveAttribute("href", "/blog/darth_vader");
   });
 });
