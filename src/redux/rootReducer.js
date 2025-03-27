@@ -1,13 +1,12 @@
-import { combineReducers } from "redux";
+import { combineReducers } from "@reduxjs/toolkit";
 import peopleDataReducer from "./reducers/peopleDataReducer";
 import vehiclesDataReducer from "./reducers/vehiclesDataReducer";
 import starshipsDataReducer from "./reducers/starshipsDataReducer";
 
-const rootReducers = combineReducers({
-    peopleDataReducer,
-    vehiclesDataReducer,
-    starshipsDataReducer
-    
+const rootReducer = combineReducers({
+  peopleDataReducer,
+  vehiclesDataReducer,
+  starshipsDataReducer,
 });
 
-export default rootReducers;
+export default rootReducer;

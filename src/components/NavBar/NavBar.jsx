@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import "./NavBar.styles.css";
 import imagen from "../../assets/sw_logo_stacked.png";
 
@@ -30,14 +30,15 @@ const NavBar = () => {
               </li>
             ))}
           </div>
-          <li style={{ borderLeft: "1px solid #333333" }}>
+          {/* Update */}
+          {/* <li style={{ borderLeft: "1px solid #333333" }}>
             <NavLink to="/log_in">log in</NavLink>
             <span className="underbar underbar--silver"></span>
           </li>
           <li style={{ borderRight: "0px" }}>
             <NavLink to="/sign_up">sign up</NavLink>
             <span className="underbar underbar--gold"></span>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

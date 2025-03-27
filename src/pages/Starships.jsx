@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux/";
-import Progressbar from "../../components/ProgressBar/PorgressBar";
-import MUIAlert from "../../components/MUIAlert/MUIAlert";
-import fetchStarships from "../../redux/actions/starshipsData";
-import InfoCard from "../../components/InfoCard/InfoCard";
-import Title from "../../components/Title/Title";
+import { useSelector, useDispatch } from "react-redux";
+import Progressbar from "../components/ProgressBar/PorgressBar";
+import MUIAlert from "../components/MUIAlert/MUIAlert";
+import fetchStarships from "../redux/actions/starshipsData";
+import InfoCard from "../components/InfoCard/InfoCard";
+import Title from "../components/Title/Title";
 
 const Characters = () => {
   const starshipsData = useSelector((state) => state.starshipsDataReducer);

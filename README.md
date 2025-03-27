@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Star Wars Wiki
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es una aplicación interactiva que permite a los usuarios explorar una enciclopedia sobre el universo de Star Wars. Los usuarios pueden buscar personajes, planetas, naves espaciales y otros elementos icónicos de la saga. La app ofrece una interfaz intuitiva para acceder rápidamente a información relevante, convirtiéndola en una herramienta útil para fanáticos de Star Wars.
 
-## Available Scripts
+## Tecnologías
 
-In the project directory, you can run:
+- **React**: Biblioteca para construir interfaces de usuario.
+- **JavaScript**: Lenguaje de programación utilizado en la aplicación.
+- **CSS**: Para el diseño y estilizado de la aplicación.
+- **Vite**: Herramienta de construcción y desarrollo rápido para proyectos frontend.
+- **SWAPI (Star Wars API)**: API utilizada para obtener información del universo Star Wars.
 
-### `npm start`
+## Requisitos previos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v18 o superior)
+- pnpm para gestionar las dependencias.
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sigue estos pasos para configurar el proyecto en tu máquina local:
 
-### `npm run build`
+1. Clona el repositorio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+   git clone https://github.com/JoanCadena/react-starwars
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navega a la carpeta del proyecto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+   cd react-starwars
+```
 
-### `npm run eject`
+3. Instala las dependencias utilizando pnpm:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+   pnpm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Ejecución en modo de desarrollo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para iniciar el servidor de desarrollo y ver la aplicación en tu navegador, ejecuta:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+pnpm run dev
+```
 
-## Learn More
+Esto abrirá la aplicación en tu navegador en http://localhost:5173.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licencia
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
-### Code Splitting
+## Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para cualquier consulta, puedes ponerte en contacto a través de tu [correo electrónico](mailto:joancadenapaternina@outlook.com).

@@ -21,12 +21,11 @@ export const items = [
     image:
       "https://lumiere-a.akamaihd.net/v1/images/62fcf548bde4cd00014e8114-image_0f021e09.jpeg?region=0%2C0%2C1536%2C864",
     name: "Darth Vader",
-    // description: "Probably the most random thing you have ever seen!",
   },
   {
     image:
       "https://lumiere-a.akamaihd.net/v1/images/630377afbde4cd0001c5574b-image_96cfcfed.jpeg?region=0%2C0%2C1536%2C864",
-    name: "Obi-Wan Kenobi",
+    name: "Darth Vader",
   },
   {
     image:

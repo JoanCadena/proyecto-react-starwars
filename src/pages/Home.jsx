@@ -1,13 +1,13 @@
-import "./Home.styles.css";
-import MUICarousel from "../../components/MUICarousel/MUICarousel";
-import InfoCardImg from "../../components/InfoCardImg/InfoCardImg";
-import Title from "../../components/Title/Title";
+import "../styles/home.css";
+import MUICarousel from "../components/MUICarousel/MUICarousel";
+import InfoCardImg from "../components/InfoCardImg/InfoCardImg";
+import Title from "../components/Title/Title";
 import {
   infoCharacters,
   infoVehicles,
   infoStarships,
   items,
-} from "./HomeUtils";
+} from "../utils/HomeUtils";
 
 const Home = () => {
   return (
